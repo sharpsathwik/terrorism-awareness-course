@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proactive Terrorism Awareness Training - Credlytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="https://i.postimg.cc/VvCgf2s5/Credlytics.png" alt="Credlytics Logo" class="logo">
+            <nav>
+                <a href="#home">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section">
+        <div class="container">
+            <div class="card">
+                <h1>Proactive Terrorism Awareness Training</h1>
+                <p class="subtitle">Enhance your security awareness and learn to identify potential threats</p>
+                
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">Organization/Company</label>
+                        <input type="text" id="organization">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" id="jobTitle">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Start Training</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content Section -->
+    <section id="courseContent" class="section hidden">
+        <div class="container">
+            <div class="card">
+                <h2>Course Content</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-text">Module <span id="currentModule">1</span> of <span id="totalModules">6</span></p>
+
+                <div id="moduleContainer">
+                    <!-- Module 1 -->
+                    <div class="module" data-module="1">
+                        <h3>Module 1: Introduction to Terrorism Awareness</h3>
+                        <div class="module-content">
+                            <h4>Understanding the Threat Landscape</h4>
+                            <p>Terrorism remains a significant global security concern. Understanding the nature of terrorist threats is essential for creating safer communities and workplaces.</p>
+                            
+                            <h4>What is Terrorism?</h4>
+                            <p>Terrorism is defined as the unlawful use of violence and intimidation, especially against civilians, in the pursuit of political aims. It aims to create fear and anxiety to achieve ideological, political, or religious objectives.</p>
+                            
+                            <h4>Why Awareness Matters</h4>
+                            <ul>
+                                <li>Early detection can prevent attacks</li>
+                                <li>Public vigilance is a critical defense layer</li>
+                                <li>Awareness empowers communities</li>
+                                <li>Quick reporting saves lives</li>
+                            </ul>
+
+                            <h4>Key Learning Objectives</h4>
+                            <p>By the end of this course, you will be able to:</p>
+                            <ul>
+                                <li>Recognize suspicious behavior and activities</li>
+                                <li>Understand terrorist tactics and methodologies</li>
+                                <li>Know how to report concerns effectively</li>
+                                <li>Respond appropriately in emergency situations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="module hidden" data-module="2">
+                        <h3>Module 2: Recognizing Suspicious Behavior</h3>
+                        <div class="module-content">
+                            <h4>Behavioral Indicators</h4>
+                            <p>Certain behaviors may indicate planning or preparation for terrorist activities. It's important to be aware without profiling individuals based on appearance or background.</p>
+                            
+                            <h4>Warning Signs to Watch For</h4>
+                            <ul>
+                                <li><strong>Surveillance:</strong> Individuals photographing or recording security measures, entry points, or security personnel</li>
+                                <li><strong>Elicitation:</strong> Attempts to gain sensitive information through casual conversation</li>
+                                <li><strong>Testing Security:</strong> Deliberate attempts to breach or probe security measures</li>
+                                <li><strong>Acquiring Supplies:</strong> Unusual purchases of materials that could be used in attacks</li>
+                                <li><strong>Suspicious Communication:</strong> Use of codes or covert communication methods</li>
+                                <li><strong>Dry Runs:</strong> Practice attempts or rehearsals of attacks</li>
+                                <li><strong>Deploying Assets:</strong> Positioning people or materials in advance</li>
+                            </ul>
+
+                            <h4>Context is Critical</h4>
+                            <p>Remember that individual behaviors may have innocent explanations. Look for patterns and combinations of suspicious activities rather than isolated incidents.</p>
+
+                            <h4>Avoiding Bias</h4>
+                            <p>Focus on behavior, not appearance. Terrorists come from all backgrounds and demographics. Profiling based on race, religion, or ethnicity is ineffective and harmful.</p>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="module hidden" data-module="3">
+                        <h3>Module 3: Understanding Attack Methodologies</h3>
+                        <div class="module-content">
+                            <h4>Common Attack Types</h4>
+                            <p>Understanding how terrorists operate helps in early detection and prevention.</p>
+                            
+                            <h4>Improvised Explosive Devices (IEDs)</h4>
+                            <ul>
+                                <li>Vehicle-borne IEDs</li>
+                                <li>Person-borne IEDs</li>
+                                <li>Stationary devices in public spaces</li>
+                                <li>Warning signs: Unattended packages, suspicious vehicles</li>
+                            </ul>
+
+                            <h4>Vehicle Attacks</h4>
+                            <ul>
+                                <li>Vehicles used as weapons in crowded areas</li>
+                                <li>Low sophistication but potentially high casualties</li>
+                                <li>Increasing frequency in recent years</li>
+                            </ul>
+
+                            <h4>Active Shooter Incidents</h4>
+                            <ul>
+                                <li>Armed assailants targeting public spaces</li>
+                                <li>Rapid response required</li>
+                                <li>Run, Hide, Fight principle</li>
+                            </ul>
+
+                            <h4>Chemical, Biological, Radiological Threats</h4>
+                            <ul>
+                                <li>Less common but high impact</li>
+                                <li>Requires specialized response</li>
+                                <li>Signs of contamination</li>
+                            </ul>
+
+                            <h4>Cyber Terrorism</h4>
+                            <ul>
+                                <li>Attacks on critical infrastructure</li>
+                                <li>Data breaches and information warfare</li>
+                                <li>Disruption of essential services</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Module 4 -->
+                    <div class="module hidden" data-module="4">
+                        <h3>Module 4: Reporting Procedures</h3>
+                        <div class="module-content">
+                            <h4>When to Report</h4>
+                            <p>If you see something suspicious, always report it. It's better to report and be wrong than to stay silent.</p>
+                            
+                            <h4>What to Report</h4>
+                            <ul>
+                                <li>Suspicious behavior or activities</li>
+                                <li>Unattended packages or bags</li>
+                                <li>Threats or concerning communications</li>
+                                <li>Unusual purchases or acquisitions</li>
+                                <li>Evidence of surveillance</li>
+                            </ul>
+
+                            <h4>How to Report</h4>
+                            <p><strong>Emergency situations (immediate threat):</strong></p>
+                            <ul>
+                                <li>Call emergency services: 999 (UK) or 911 (US)</li>
+                                <li>Provide clear location and nature of threat</li>
+                                <li>Follow instructions from authorities</li>
+                            </ul>
+
+                            <p><strong>Non-emergency suspicious activity:</strong></p>
+                            <ul>
+                                <li>UK: Call the Anti-Terrorist Hotline: 0800 789 321</li>
+                                <li>US: Contact local FBI field office or call 1-800-CALL-FBI</li>
+                                <li>Report online through official channels</li>
+                            </ul>
+
+                            <h4>Information to Provide</h4>
+                            <ul>
+                                <li>What you observed</li>
+                                <li>When and where it occurred</li>
+                                <li>Descriptions of individuals involved</li>
+                                <li>Vehicle information if applicable</li>
+                                <li>Any photos or videos (do not put yourself at risk)</li>
+                            </ul>
+
+                            <h4>Confidentiality</h4>
+                            <p>Reports can be made anonymously. Your identity will be protected according to law enforcement protocols.</p>
+                        </div>
+                    </div>
+
+                    <!-- Module 5 -->
+                    <div class="module hidden" data-module="5">
+                        <h3>Module 5: Personal and Workplace Security</h3>
+                        <div class="module-content">
+                            <h4>Personal Safety Measures</h4>
+                            <ul>
+                                <li><strong>Stay Aware:</strong> Be conscious of your surroundings</li>
+                                <li><strong>Know Exits:</strong> Identify emergency exits in public spaces</li>
+                                <li><strong>Avoid Predictable Patterns:</strong> Vary your routines when possible</li>
+                                <li><strong>Trust Your Instincts:</strong> If something feels wrong, remove yourself from the situation</li>
+                            </ul>
+
+                            <h4>Workplace Security</h4>
+                            <ul>
+                                <li>Access control and visitor management</li>
+                                <li>Regular security assessments</li>
+                                <li>Employee training and awareness programs</li>
+                                <li>Emergency response procedures</li>
+                                <li>Communication systems for alerts</li>
+                            </ul>
+
+                            <h4>Emergency Preparedness</h4>
+                            <p><strong>Run, Hide, Fight Protocol:</strong></p>
+                            <ul>
+                                <li><strong>Run:</strong> If there's a safe escape route, evacuate immediately</li>
+                                <li><strong>Hide:</strong> If evacuation isn't possible, find a secure hiding place</li>
+                                <li><strong>Fight:</strong> As a last resort, attempt to incapacitate the attacker</li>
+                            </ul>
+
+                            <h4>Building Resilience</h4>
+                            <p>Communities and organizations that prepare are more resilient. Regular drills and training help ensure everyone knows what to do in an emergency.</p>
+                        </div>
+                    </div>
+
+                    <!-- Module 6 -->
+                    <div class="module hidden" data-module="6">
+                        <h3>Module 6: Community Engagement and Prevention</h3>
+                        <div class="module-content">
+                            <h4>The Role of Communities</h4>
+                            <p>Strong, connected communities are the best defense against terrorism. Community engagement helps identify vulnerable individuals and prevent radicalization.</p>
+                            
+                            <h4>Understanding Radicalization</h4>
+                            <p>Radicalization is the process by which individuals adopt extreme ideologies. Recognizing early signs can help intervene before someone commits to violence.</p>
+                            
+                            <h4>Warning Signs of Radicalization</h4>
+                            <ul>
+                                <li>Sudden changes in behavior or appearance</li>
+                                <li>Withdrawal from family and friends</li>
+                                <li>Expression of extremist views</li>
+                                <li>Glorification of violence</li>
+                                <li>Association with known extremist groups</li>
+                                <li>Increased secrecy about activities</li>
+                            </ul>
+
+                            <h4>Prevention Through Intervention</h4>
+                            <ul>
+                                <li>Early intervention programs</li>
+                                <li>Community support networks</li>
+                                <li>Education and awareness</li>
+                                <li>Addressing grievances and vulnerabilities</li>
+                            </ul>
+
+                            <h4>Building Resilient Communities</h4>
+                            <ul>
+                                <li>Foster inclusion and diversity</li>
+                                <li>Create safe spaces for dialogue</li>
+                                <li>Support youth engagement programs</li>
+                                <li>Partner with local authorities</li>
+                                <li>Promote critical thinking and media literacy</li>
+                            </ul>
+
+                            <h4>Your Role in Prevention</h4>
+                            <p>Every individual can contribute to a safer society. By staying informed, vigilant, and engaged, you help create an environment where terrorism cannot thrive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-navigation">
+                    <button id="prevModule" class="btn btn-secondary" disabled>Previous</button>
+                    <button id="nextModule" class="btn btn-primary">Next Module</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Section -->
+    <section id="examSection" class="section hidden">
+        <div class="container">
+            <div class="card">
+                <h2>Final Assessment</h2>
+                <p class="subtitle">Answer all questions correctly to receive your certificate</p>
+                <p class="exam-instructions">You need to score 80% or higher to pass (8 out of 10 questions)</p>
+
+                <form id="examForm">
+                    <!-- Question 1 -->
+                    <div class="question">
+                        <h4>1. What is the primary purpose of terrorism awareness training?</h4>
+                        <label><input type="radio" name="q1" value="a"> To profile individuals based on appearance</label>
+                        <label><input type="radio" name="q1" value="b"> To create fear among the public</label>
+                        <label><input type="radio" name="q1" value="c" required> To enable early detection and prevention of threats</label>
+                        <label><input type="radio" name="q1" value="d"> To restrict public access to spaces</label>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question">
+                        <h4>2. Which of the following is a behavioral indicator of potential terrorist activity?</h4>
+                        <label><input type="radio" name="q2" value="a"> Someone taking tourist photos</label>
+                        <label><input type="radio" name="q2" value="b" required> Surveillance of security measures and entry points</label>
+                        <label><input type="radio" name="q2" value="c"> A person speaking a foreign language</label>
+                        <label><input type="radio" name="q2" value="d"> Someone wearing religious attire</label>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question">
+                        <h4>3. What does the "Run, Hide, Fight" protocol recommend as the first action?</h4>
+                        <label><input type="radio" name="q3" value="a"> Hide in place immediately</label>
+                        <label><input type="radio" name="q3" value="b"> Fight back against the attacker</label>
+                        <label><input type="radio" name="q3" value="c" required> Evacuate if there's a safe escape route</label>
+                        <label><input type="radio" name="q3" value="d"> Call emergency services first</label>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question">
+                        <h4>4. When should you report suspicious activity?</h4>
+                        <label><input type="radio" name="q4" value="a"> Only if you're absolutely certain it's terrorism-related</label>
+                        <label><input type="radio" name="q4" value="b" required> Whenever you observe something concerning, even if unsure</label>
+                        <label><input type="radio" name="q4" value="c"> Only after discussing it with friends and family</label>
+                        <label><input type="radio" name="q4" value="d"> Never, to avoid false alarms</label>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question">
+                        <h4>5. Which of the following is NOT a common attack methodology discussed in the training?</h4>
+                        <label><input type="radio" name="q5" value="a"> Improvised Explosive Devices (IEDs)</label>
+                        <label><input type="radio" name="q5" value="b"> Vehicle attacks</label>
+                        <label><input type="radio" name="q5" value="c"> Active shooter incidents</label>
+                        <label><input type="radio" name="q5" value="d" required> Pickpocketing</label>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question">
+                        <h4>6. What is the correct approach to identifying potential threats?</h4>
+                        <label><input type="radio" name="q6" value="a"> Profile based on race, religion, or ethnicity</label>
+                        <label><input type="radio" name="q6" value="b" required> Focus on behavior and patterns, not appearance</label>
+                        <label><input type="radio" name="q6" value="c"> Assume anyone who looks different is suspicious</label>
+                        <label><input type="radio" name="q6" value="d"> Avoid observation to respect privacy</label>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="question">
+                        <h4>7. What is radicalization?</h4>
+                        <label><input type="radio" name="q7" value="a"> A medical condition</label>
+                        <label><input type="radio" name="q7" value="b" required> The process by which individuals adopt extreme ideologies</label>
+                        <label><input type="radio" name="q7" value="c"> A type of terrorist attack</label>
+                        <label><input type="radio" name="q7" value="d"> A security screening process</label>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="question">
+                        <h4>8. In the UK, which number should you call for non-emergency suspicious activity?</h4>
+                        <label><input type="radio" name="q8" value="a"> 999</label>
+                        <label><input type="radio" name="q8" value="b"> 111</label>
+                        <label><input type="radio" name="q8" value="c" required> 0800 789 321 (Anti-Terrorist Hotline)</label>
+                        <label><input type="radio" name="q8" value="d"> 101</label>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="question">
+                        <h4>9. What makes communities more resilient against terrorism?</h4>
+                        <label><input type="radio" name="q9" value="a"> Increased surveillance cameras</label>
+                        <label><input type="radio" name="q9" value="b"> Higher security walls</label>
+                        <label><input type="radio" name="q9" value="c" required> Strong connections, engagement, and preparedness</label>
+                        <label><input type="radio" name="q9" value="d"> Restricting public gatherings</label>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="question">
+                        <h4>10. What should you consider when observing potentially suspicious behavior?</h4>
+                        <label><input type="radio" name="q10" value="a"> Individual behaviors in isolation</label>
+                        <label><input type="radio" name="q10" value="b" required> Context and patterns of multiple suspicious activities</label>
+                        <label><input type="radio" name="q10" value="c"> Only obvious criminal acts</label>
+                        <label><input type="radio" name="q10" value="d"> The person's appearance first</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Assessment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificateSection" class="section hidden">
+        <div class="container">
+            <div class="card">
+                <div class="success-message">
+                    <div class="success-icon">✓</div>
+                    <h2>Congratulations!</h2>
+                    <p>You have successfully completed the Proactive Terrorism Awareness Training</p>
+                </div>
+
+                <div id="certificate" class="certificate">
+                    <div class="certificate-border">
+                        <div class="certificate-content">
+                            <img src="https://i.postimg.cc/VvCgf2s5/Credlytics.png" alt="Credlytics Logo" class="cert-logo">
+                            
+                            <h2 class="cert-title">Certificate of Completion</h2>
+                            
+                            <p class="cert-text">This is to certify that</p>
+                            
+                            <h3 class="cert-name" id="certName"></h3>
+                            
+                            <p class="cert-text">has successfully completed</p>
+                            
+                            <h3 class="cert-course">Proactive Terrorism Awareness Training</h3>
+                            
+                            <div class="cert-details">
+                                <p><strong>Date of Completion:</strong> <span id="certDate"></span></p>
+                                <p><strong>Certificate ID:</strong> <span id="certId"></span></p>
+                            </div>
+                            
+                            <div class="cert-footer">
+                                <p class="cert-verification">
+                                    To verify this certificate, please contact us with the Certificate ID at:<br>
+                                    <strong>verify@credlytics.co.uk</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-actions">
+                    <button id="downloadCert" class="btn btn-primary">Download Certificate (PDF)</button>
+                    <button id="emailCert" class="btn btn-primary">Email to Credlytics</button>
+                    <button id="printCert" class="btn btn-secondary">Print Certificate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Credlytics. All rights reserved.</p>
+            <p>Professional Training & Certification Services</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
